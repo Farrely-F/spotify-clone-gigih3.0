@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotipi</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 9.17071C12.6872 9.06015 12.3506 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12V2.4578C19.0571 3.73207 22 7.52236 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.3375 2 12.6711 2.01672 13 2.04938V9.17071Z' fill='rgba(255,255,255,1)'%3E%3C/path%3E%3C/svg%3E"
+    />
+    <!-- Gfonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">
+        <i class="ri-disc-fill"></i>
+        <h1>Spotipi</h1>
+      </div>
+      <div class="header-menu">
+        <i class="ri-menu-3-line"></i>
+      </div>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Main Items -->
+    <div class="container">
+      <aside>
+        <div class="top-wraper box">
+          <div class="top-icon home">
+            <i class="ri-home-fill"></i>
+            <h2 class="heading">Home</h2>
+          </div>
+          <div class="top-icon">
+            <i class="ri-search-line"></i>
+            <h2 class="heading">Search</h2>
+          </div>
+        </div>
+        <div class="mid-wraper">
+          <div class="library">
+            <i class="ri-folder-music-fill"></i>
+            <h2 class="heading">Your Library</h2>
+            <i class="ri-add-circle-fill"></i>
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="genre">
+            <a href="#">Rock</a>
+            <a href="#">Pop</a>
+          </div>
+          <div class="song-list">
+            <div class="song">
+              <div class="song-top">
+                <img src="https://marketplace.canva.com/EAEqlr422aw/1/0/1600w/canva-falling-modern-aesthetic-music-album-cover-KsRCFSNg4XA.jpg" alt="gambar" />
+              </div>
+              <div class="song-bottom">
+                <h3>Falling</h3>
+                <p>Playlist • Author</p>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song-top">
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pink-cloud-cd-cover-music-design-template-258c703e9959b4635649e3944488c688_screen.jpg?ts=1631060402" alt="gambar" />
+              </div>
+              <div class="song-bottom">
+                <h3>Cloud</h3>
+                <p>Playlist • Author</p>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song-top">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="gambar"
+                />
+              </div>
+              <div class="song-bottom">
+                <h3>Eclipse</h3>
+                <p>Playlist • Author</p>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song-top">
+                <img
+                  src="https://graphicriver.img.customer.envatousercontent.com/files/264102893/brainwash-albumcover-template-preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=590&s=5201f83eeedc67483d4e2a14dea00ee3"
+                  alt="gambar"
+                />
+              </div>
+              <div class="song-bottom">
+                <h3>Brain Wash</h3>
+                <p>Playlist • Author</p>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song-top">
+                <img src="https://www.designformusic.com/wp-content/uploads/2018/11/trailer-tension-album-cover-3d-design-1000x1000.jpg" alt="gambar" />
+              </div>
+              <div class="song-bottom">
+                <h3>Appocalypse</h3>
+                <p>Playlist • Author</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-wraper">
+          <div class="socmed">
+            <p>Farrely Firenza | Gigih3.0</p>
+            <div class="socmed-icon">
+              <a href="https://www.linkedin.com/in/farrelyf/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+              <a href="https://github.com/Farrely-F" target="_blank"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="main-wraper">
+          <section class="main-box">
+            <div class="profile">
+              <div class="top-left btn">
+                <i class="ri-arrow-left-s-line"></i>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+              <div class="top-right">
+                <a href="#" class="install">Install Apps</a>
+                <i class="ri-user-settings-fill avatar"></i>
+              </div>
+            </div>
+            <h2>Listen to Previous Songs</h2>
+            <div class="grid">
+              <div class="recents">
+                <div class="recent-img">
+                  <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/abstract-city-retro-colors-music-cd-cover-design-template-8c13504ecd1a18c2663b6729a3b4e455_screen.jpg?ts=1583539009" alt="img" />
+                  <i class="ri-play-fill"></i>
+                </div>
+                <div class="recent-title">
+                  <h3>The Night</h3>
+                </div>
+              </div>
+              <div class="recents">
+                <div class="recent-img">
+                  <img src="https://images.template.net/wp-content/uploads/2022/06/Thriller-Album-Cover.jpg" alt="img" />
+                  <i class="ri-play-fill"></i>
+                </div>
+                <div class="recent-title">
+                  <h3>The Stars</h3>
+                </div>
+              </div>
+              <div class="recents">
+                <div class="recent-img">
+                  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/fe529a64193929.5aca8500ba9ab.jpg" alt="img" />
+                  <i class="ri-play-fill"></i>
+                </div>
+                <div class="recent-title">
+                  <h3>The Astronaut</h3>
+                </div>
+              </div>
+              <div class="recents">
+                <div class="recent-img">
+                  <img src="https://i.pinimg.com/originals/63/a0/08/63a008f631ae7492a75a001bd0791e8f.jpg" alt="img" />
+                  <i class="ri-play-fill"></i>
+                </div>
+                <div class="recent-title">
+                  <h3>The Martin</h3>
+                </div>
+              </div>
+              <div class="recents">
+                <div class="recent-img">
+                  <img src="https://marketplace.canva.com/EAFWz37wwl0/1/0/1600w/canva-black-minimalist-photocentric-rose-on-fire-hip-hop-album-cover-laJL2q01ZUU.jpg" alt="img" />
+                  <i class="ri-play-fill"></i>
+                </div>
+                <div class="recent-title">
+                  <h3>Heatin Up</h3>
+                </div>
+              </div>
+              <div class="recents">
+                <div class="recent-img">
+                  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/c516f191023435.5e270367679f1.png" alt="img" />
+                  <i class="ri-play-fill"></i>
+                </div>
+                <div class="recent-title">
+                  <h3>Cyberpunk</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main-box">
+            <h2>Personalized for you</h2>
+            <div class="cards">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/750x500/photo/2023/06/23/1642919307.png" alt="test" />
+                </div>
+                <div class="card-text">
+                  <h3>Maestro</h3>
+                  <p>Brik May Hart</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2023/06/19/Mr-Waduh-Thomas-1215251562.jpg" alt="test" />
+                </div>
+                <div class="card-text">
+                  <h3>Waduh?</h3>
+                  <p>Waduh 😮</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2023/06/11/IMG_0845-2900490930.jpg" alt="test" />
+                </div>
+                <div class="card-text">
+                  <h3>The Legends</h3>
+                  <p>Aldi Martin Taher</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="player">
+      <div class="left">
+        <div class="current-song">
+          <div class="current-img">
+            <img src="https://marketplace.canva.com/EAFMpnHPAp4/1/0/1600w/canva-white-black-texture-thank-you-album-cover-7G3HNgYlp2o.jpg" alt="IMG" />
+          </div>
+          <div class="current-title">
+            <h3 class="heading">Monster</h3>
+            <p class="text">Imagine Dragons</p>
+          </div>
+          <div class="current-icons">
+            <i class="ri-heart-fill"></i>
+          </div>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="mid-top">
+          <i class="ri-shuffle-line"></i>
+          <i class="ri-skip-left-fill"></i>
+          <i class="ri-play-fill"></i>
+          <i class="ri-skip-right-fill"></i>
+          <i class="ri-infinity-line"></i>
+        </div>
+        <div class="mid-bottom">
+          <p>0:00</p>
+          <div class="bar">
+            <span></span>
+          </div>
+          <p>3:10</p>
+        </div>
+      </div>
+      <div class="right">
+        <i class="ri-volume-down-fill"></i>
+        <i class="ri-double-quotes-l"></i>
+        <i class="ri-share-box-line"></i>
+      </div>
+    </div>
+    <!-- End of Main Items -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-left">
+        <h2 class="heading">Spotipi</h2>
+        <p class="text">Your reliable music streaming platform!</p>
+      </div>
+      <div class="footer-right">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Playstore" />
+        <br />
+        <img src="https://assets.stickpng.com/images/5a902db97f96951c82922874.png" alt="App Store" />
+      </div>
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>

@@ -1,0 +1,51 @@
+/* Tablet & Mobile */
+
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    min-width: 100vw;
+  }
+
+  .player {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  main h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    align-items: center;
+    gap: 16px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+/* Smaller Screen (Mobile Phone)*/
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
